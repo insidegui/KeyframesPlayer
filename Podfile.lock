@@ -1,0 +1,22 @@
+PODS:
+  - keyframes (1.0.0)
+
+DEPENDENCIES:
+  - keyframes (from `https://github.com/insidegui/keyframes.git`, branch `macOS`)
+
+EXTERNAL SOURCES:
+  keyframes:
+    :branch: macOS
+    :git: https://github.com/insidegui/keyframes.git
+
+CHECKOUT OPTIONS:
+  keyframes:
+    :commit: 234a62fc973325ceff49a1201f13194ed68ac44f
+    :git: https://github.com/insidegui/keyframes.git
+
+SPEC CHECKSUMS:
+  keyframes: d25d0cc3138dc25601dfef89cf45b6cd0192ba8d
+
+PODFILE CHECKSUM: 7d9f2f32ee99e8ac8b8046309dd25d41ff6ab3b5
+
+COCOAPODS: 1.2.0.beta.1
