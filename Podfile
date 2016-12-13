@@ -7,4 +7,5 @@ target 'Keyframes Player' do
 
   # Pods for Keyframes Player
   pod 'keyframes', :git => 'https://github.com/insidegui/keyframes.git', :branch => 'macOS'
+  pod 'KVOController'
 end
