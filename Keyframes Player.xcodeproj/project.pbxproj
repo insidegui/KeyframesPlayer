@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7E557622FA3122E35CD9B3BE /* Pods_Keyframes_Player.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BC1BE66CDBE9E7B60C1C5C /* Pods_Keyframes_Player.framework */; };
+		DD96A3921E00546F004E1209 /* PlaybackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD96A3911E00546F004E1209 /* PlaybackViewController.swift */; };
 		DDA2DE611DFF275A006155E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA2DE601DFF275A006155E3 /* AppDelegate.swift */; };
 		DDA2DE631DFF275A006155E3 /* CanvasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA2DE621DFF275A006155E3 /* CanvasViewController.swift */; };
 		DDA2DE651DFF275A006155E3 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA2DE641DFF275A006155E3 /* Document.swift */; };
@@ -21,6 +22,7 @@
 		0F975873624B0406502B3325 /* Pods-Keyframes Player.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keyframes Player.release.xcconfig"; path = "Pods/Target Support Files/Pods-Keyframes Player/Pods-Keyframes Player.release.xcconfig"; sourceTree = "<group>"; };
 		3B6884811F3C2D29BCA6B808 /* Pods-Keyframes Player.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keyframes Player.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Keyframes Player/Pods-Keyframes Player.debug.xcconfig"; sourceTree = "<group>"; };
 		81BC1BE66CDBE9E7B60C1C5C /* Pods_Keyframes_Player.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Keyframes_Player.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD96A3911E00546F004E1209 /* PlaybackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaybackViewController.swift; sourceTree = "<group>"; };
 		DDA2DE5D1DFF275A006155E3 /* Keyframes Player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Keyframes Player.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDA2DE601DFF275A006155E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDA2DE621DFF275A006155E3 /* CanvasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 			children = (
 				DDA2DE641DFF275A006155E3 /* Document.swift */,
 				DDA2DE621DFF275A006155E3 /* CanvasViewController.swift */,
+				DD96A3911E00546F004E1209 /* PlaybackViewController.swift */,
 				DDA2DE751DFF2874006155E3 /* UsesVector.swift */,
 			);
 			name = Controllers;
@@ -252,6 +255,7 @@
 				DDA2DE631DFF275A006155E3 /* CanvasViewController.swift in Sources */,
 				DDA2DE611DFF275A006155E3 /* AppDelegate.swift in Sources */,
 				DDA2DE7A1DFF2AF5006155E3 /* CanvasView.swift in Sources */,
+				DD96A3921E00546F004E1209 /* PlaybackViewController.swift in Sources */,
 				DDA2DE761DFF2874006155E3 /* UsesVector.swift in Sources */,
 				DDA2DE651DFF275A006155E3 /* Document.swift in Sources */,
 			);
