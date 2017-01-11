@@ -1,10 +1,12 @@
 PODS:
   - keyframes (1.0.0)
   - KVOController (1.2.0)
+  - Sparkle (1.15.1)
 
 DEPENDENCIES:
   - keyframes (from `https://github.com/insidegui/keyframes.git`, branch `macOS`)
   - KVOController
+  - Sparkle
 
 EXTERNAL SOURCES:
   keyframes:
@@ -19,7 +21,8 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   keyframes: d25d0cc3138dc25601dfef89cf45b6cd0192ba8d
   KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
+  Sparkle: 618fd2d2867fa06a5572a8c4a4c6a721f04da2d2
 
-PODFILE CHECKSUM: a23965be312976c0d5f70556d88af491e317477a
+PODFILE CHECKSUM: '07814bd33085068b93aeeb4b247dbbfebcac9273'
 
 COCOAPODS: 1.2.0.beta.1
