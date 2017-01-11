@@ -52,11 +52,11 @@ class CanvasViewController: NSViewController, UsesVector {
     private func updateUI() {
         guard let vector = vector, isViewLoaded else { return }
         
-        if vectorLayer == nil {
-            vectorLayer = KFVectorLayer()
-        } else {
+        if vectorLayer != nil {
             vectorLayer.removeFromSuperlayer()
         }
+        
+        vectorLayer = KFVectorLayer()
         
         resizeLayer()
         vectorLayer.faceModel = vector
