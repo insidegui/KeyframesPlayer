@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import keyframes
+import Keyframes
 
 protocol UsesVector {
     

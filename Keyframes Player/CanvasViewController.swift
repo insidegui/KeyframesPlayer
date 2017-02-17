@@ -7,7 +7,7 @@
 //
 
 import Cocoa
-import keyframes
+import Keyframes
 import KVOController
 
 class CanvasViewController: NSViewController, UsesVector {
@@ -59,7 +59,7 @@ class CanvasViewController: NSViewController, UsesVector {
         vectorLayer = KFVectorLayer()
         
         resizeLayer()
-        vectorLayer.faceModel = vector
+        vectorLayer.setFaceModel(vector)
         
         view.layer?.addSublayer(vectorLayer)
     }
