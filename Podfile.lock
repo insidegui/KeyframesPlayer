@@ -1,12 +1,10 @@
 PODS:
   - Keyframes (1.0.0)
   - KVOController (1.2.0)
-  - Sparkle (1.16.0)
 
 DEPENDENCIES:
   - Keyframes (from `https://github.com/facebookincubator/Keyframes.git`, branch `master`)
   - KVOController
-  - Sparkle
 
 EXTERNAL SOURCES:
   Keyframes:
@@ -21,8 +19,7 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   Keyframes: 2048d8626d14ef726d1c5cffa0fa5c00f3d8f681
   KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
-  Sparkle: 57650c525b8922b1ef72021f9d92287fc7d5d6f0
 
-PODFILE CHECKSUM: 3c261889752726827446b0799a3afc113df8bcdc
+PODFILE CHECKSUM: '09c9301b9ab90abcf31c779c1097f511ee81afed'
 
 COCOAPODS: 1.2.0

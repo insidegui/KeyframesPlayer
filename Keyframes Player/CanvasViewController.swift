@@ -60,6 +60,7 @@ class CanvasViewController: NSViewController, UsesVector {
         
         resizeLayer()
         vectorLayer.setFaceModel(vector)
+        vectorLayer.startAnimation()
         
         view.layer?.addSublayer(vectorLayer)
     }
