@@ -96,18 +96,28 @@ class CanvasViewController: NSViewController, UsesVector {
     }
     
     private func resizeLayer() {
-        guard vectorLayer != nil && isViewLoaded else { return }
+        guard let vector = vector, vectorLayer != nil && isViewLoaded else { return }
         
         CATransaction.begin()
         CATransaction.setDisableActions(true)
         CATransaction.setAnimationDuration(0)
-        
-        let longSide = max(view.bounds.width, view.bounds.height)
-        let shortSide = min(view.bounds.width, view.bounds.height)
-        
-        vectorLayer.frame = CGRect(x: longSide / 4, y: shortSide / 2 - longSide / 4, width: longSide / 2, height: longSide / 2)
-        
+
+        let size = calculateAspectFillSize(originalSize: vector.canvasSize, cropSize: view.bounds.size)
+        vectorLayer.frame = CGRect(x: 0, y: 0, width: size.width, height: size.height)
+        vectorLayer.position = CGPoint(x: view.bounds.midX, y: view.bounds.midY)
+
         CATransaction.commit()
+    }
+
+    private func calculateAspectFillSize(originalSize: CGSize, cropSize: CGSize) -> CGSize {
+        let cropRatio = cropSize.width / cropSize.height;
+        let originalRatio = originalSize.width / originalSize.height;
+
+        if (cropRatio > originalRatio) {
+            return CGSize(width: originalSize.width * cropSize.height / originalSize.height, height: cropSize.height)
+        } else {
+            return CGSize(width: cropSize.width, height: originalSize.height * cropSize.width / originalSize.width)
+        }
     }
     
     override func viewDidLayout() {
