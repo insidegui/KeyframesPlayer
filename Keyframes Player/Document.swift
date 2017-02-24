@@ -7,7 +7,7 @@
 //
 
 import Cocoa
-import keyframes
+import Keyframes
 
 class Document: NSDocument {
     

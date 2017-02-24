@@ -1,28 +1,25 @@
 PODS:
-  - keyframes (1.0.0)
+  - Keyframes (1.0.0)
   - KVOController (1.2.0)
-  - Sparkle (1.15.1)
 
 DEPENDENCIES:
-  - keyframes (from `https://github.com/insidegui/keyframes.git`, branch `macOS`)
+  - Keyframes (from `https://github.com/facebookincubator/Keyframes.git`, branch `master`)
   - KVOController
-  - Sparkle
 
 EXTERNAL SOURCES:
-  keyframes:
-    :branch: macOS
-    :git: https://github.com/insidegui/keyframes.git
+  Keyframes:
+    :branch: master
+    :git: https://github.com/facebookincubator/Keyframes.git
 
 CHECKOUT OPTIONS:
-  keyframes:
-    :commit: 234a62fc973325ceff49a1201f13194ed68ac44f
-    :git: https://github.com/insidegui/keyframes.git
+  Keyframes:
+    :commit: 91fb999958d7962f06861475628e792032a836da
+    :git: https://github.com/facebookincubator/Keyframes.git
 
 SPEC CHECKSUMS:
-  keyframes: d25d0cc3138dc25601dfef89cf45b6cd0192ba8d
+  Keyframes: 2048d8626d14ef726d1c5cffa0fa5c00f3d8f681
   KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
-  Sparkle: 618fd2d2867fa06a5572a8c4a4c6a721f04da2d2
 
-PODFILE CHECKSUM: '07814bd33085068b93aeeb4b247dbbfebcac9273'
+PODFILE CHECKSUM: 09c9301b9ab90abcf31c779c1097f511ee81afed
 
-COCOAPODS: 1.2.0.beta.1
+COCOAPODS: 1.2.0

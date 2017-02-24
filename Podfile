@@ -6,7 +6,6 @@ target 'Keyframes Player' do
   use_frameworks!
 
   # Pods for Keyframes Player
-  pod 'keyframes', :git => 'https://github.com/insidegui/keyframes.git', :branch => 'macOS'
+  pod 'Keyframes', :git => 'https://github.com/facebookincubator/Keyframes.git', :branch => 'master'
   pod 'KVOController'
-  pod 'Sparkle'
 end
