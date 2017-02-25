@@ -8,4 +8,5 @@ target 'Keyframes Player' do
   # Pods for Keyframes Player
   pod 'Keyframes', :git => 'https://github.com/facebookincubator/Keyframes.git', :branch => 'master'
   pod 'KVOController'
+  pod 'Sparkle'
 end
