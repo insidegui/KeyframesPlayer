@@ -10,7 +10,7 @@ import Cocoa
 
 class PlaybackViewController: NSViewController {
 
-    var progress = 0.0 {
+    @objc var progress = 0.0 {
         willSet {
             willChangeValue(forKey: "progress")
         }
@@ -20,7 +20,7 @@ class PlaybackViewController: NSViewController {
     }
     
     init() {
-        super.init(nibName: nil, bundle: nil)!
+        super.init(nibName: nil, bundle: nil)
     }
     
     required init?(coder: NSCoder) {
@@ -44,7 +44,7 @@ class PlaybackViewController: NSViewController {
     override func loadView() {
         let vfxView = NSVisualEffectView(frame: .zero)
         vfxView.material = .mediumLight
-        vfxView.appearance = NSAppearance(named: NSAppearanceNameVibrantLight)
+        vfxView.appearance = NSAppearance(named: NSAppearance.Name.vibrantLight)
         vfxView.blendingMode = .withinWindow
         vfxView.wantsLayer = true
         
@@ -53,7 +53,7 @@ class PlaybackViewController: NSViewController {
         separatorView.layer = CALayer()
         separatorView.layer?.backgroundColor = NSColor.lightGray.cgColor
         separatorView.layer?.opacity = 0.3
-        separatorView.autoresizingMask = [.viewWidthSizable, .viewMinYMargin]
+        separatorView.autoresizingMask = [NSView.AutoresizingMask.width, NSView.AutoresizingMask.minYMargin]
         self.view = vfxView
         
         view.translatesAutoresizingMaskIntoConstraints = false

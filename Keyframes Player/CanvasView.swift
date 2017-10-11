@@ -10,8 +10,8 @@ import Cocoa
 
 class CanvasView: NSView {
 
-    var target: Any?
-    var action: Selector?
+    @objc var target: Any?
+    @objc var action: Selector?
     
     override var isFlipped: Bool {
         return true

@@ -15,17 +15,17 @@ class CanvasViewController: NSViewController, UsesVector {
     private var vectorLayer: KFVectorLayer!
     fileprivate var playbackController: PlaybackViewController!
     
-    var vector: KFVector? {
+    @objc var vector: KFVector? {
         didSet {
             updateUI()
         }
     }
     
-    var canvas: CanvasView? {
+    @objc var canvas: CanvasView? {
         return view as? CanvasView
     }
     
-    var isPlaying = false
+    @objc var isPlaying = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
