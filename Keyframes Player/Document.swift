@@ -39,6 +39,8 @@ class Document: NSDocument {
     
     private var lastModificationDate = Date.distantPast
     
+    private var vector: KFVector?
+    
     private func load(from url: URL) throws {
         let data = try Data(contentsOf: url)
         
@@ -51,6 +53,8 @@ class Document: NSDocument {
         guard let vector = KFVectorFromDictionary(face) else {
             throw DocumentError.load
         }
+        
+        self.vector = vector
         
         DispatchQueue.main.async {
             self.propagate(vector)
@@ -84,6 +88,29 @@ class Document: NSDocument {
             try load(from: url)
         } catch {
             NSLog("Error reading updated document from path: \(url.path)")
+        }
+    }
+    
+    @IBAction func exportCoreAnimationArchive(_ sender: Any?) {
+        guard let vector = self.vector else { return }
+        
+        let vectorLayer = KFVectorLayer()
+        vectorLayer.frame = CGRect(x: 0, y: 0, width: 500, height: 500)
+        vectorLayer.setFaceModel(vector)
+        vectorLayer.startAnimation()
+        
+        let panel = NSSavePanel()
+        panel.allowedFileTypes = ["caar", "ca"]
+        panel.runModal()
+        
+        guard let url = panel.url else { return }
+        
+        let exporter = CAExporter(rootLayer: vectorLayer)
+        
+        do {
+            try exporter.exportToFile(at: url)
+        } catch {
+            NSApp.presentError(error)
         }
     }
 
