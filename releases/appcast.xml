@@ -6,6 +6,18 @@
         <description>Most recent changes with links to updates.</description>
         <language>en</language>
 		
+        <item>
+            <title>Version 1.2</title>
+			<description><![CDATA[
+							<ul>
+								<li>Adds an export to CAAR option which allows you to use your animations without importing Keyframes (<a href="https://github.com/insidegui/KeyframesPlayer/blob/master/README.md">learn more</a>)</li>
+							</ul>
+						]]></description>
+            <pubDate>Thu, 12 Oct 2017 18:32:00 -0300</pubDate>
+            <enclosure url="https://github.com/insidegui/KeyframesPlayer/releases/download/1.2/KeyframesPlayer_v1.2.zip" sparkle:version="12" sparkle:shortVersionString="1.2" length="5567384" type="application/octet-stream" />
+            <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
+        </item>
+
 		<item>
             <title>Version 1.1.1</title>
 			<description><![CDATA[
