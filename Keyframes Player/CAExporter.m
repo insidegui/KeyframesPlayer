@@ -8,9 +8,6 @@
 
 #import "CAExporter.h"
 
-extern uint8_t CAEncodeBackingStores;
-extern uint8_t CALayerEncodeAllAnimations;
-
 extern NSData *__nonnull CAEncodeLayerTreeWithInfo(CALayer *__nonnull rootLayer, id<NSCoding> __nullable info);
 extern BOOL CAMLEncodeLayerTreeToPathWithInfo(CALayer *__nonnull rootLayer, NSString *__nonnull path, id<NSCoding> __nullable info);
 
@@ -32,9 +29,6 @@ NSString * const kCAExporterErrorDomain = @"br.com.guilhermerambo.CAExporter";
 
 - (BOOL)exportToFileAtURL:(NSURL *)url error:(NSError *__autoreleasing *)outError
 {
-    CAEncodeBackingStores = 1;
-    CALayerEncodeAllAnimations = 1;
-    
     if ([url.pathExtension isEqualToString:@"caar"]) {
         NSData *data = [NSKeyedArchiver archivedDataWithRootObject:@{@"rootLayer": _rootLayer}];
         
